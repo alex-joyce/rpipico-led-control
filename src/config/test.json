@@ -1,22 +1,45 @@
 [
   {
-    "duration": 5,
+    "pinNo": 1,
     "ledActions": [
       {
-        "pin": 13,
+        "cycles": 2,
         "mode": "breathe",
-        "minBrightness": 0,
-        "maxBrightness": 1,
-        "upSpeed": 1000,
-        "downSpeed": 1000
+        "breatheOptions": {
+          "minBrightness": 0,
+          "maxBrightness": 1,
+          "upTicks": 50,
+          "downTicks": 50
+        },
+        "blinkOptions": null,
+        "staticOptions": null
+      }
+    ]
+  },
+  {
+    "pinNo": 13,
+    "ledActions": [
+      {
+        "cycles": 5,
+        "mode": "static",
+        "breatheOptions": null,
+        "blinkOptions": null,
+        "staticOptions": {
+          "brightness": 0.5,
+          "ticks": 150
+        }
       },
       {
-        "pin": 9,
+        "cycles": 5,
         "mode": "breathe",
-        "minBrightness": 0,
-        "maxBrightness": 1,
-        "upSpeed": 1000,
-        "downSpeed": 1000
+        "breatheOptions": {
+          "minBrightness": 0,
+          "maxBrightness": 1,
+          "upTicks": 25,
+          "downTicks": 25
+        },
+        "blinkOptions": null,
+        "staticOptions": null
       }
     ]
   }
