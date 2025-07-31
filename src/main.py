@@ -3,6 +3,7 @@ import duty_cycle_calculator as dcs
 from machine import Pin, PWM
 from time import sleep
 
+
 pin_pwms = dict()
 pin_nos = []
 
@@ -25,7 +26,9 @@ def main():
     tick = 0
     while True:
         for pin_no in pin_nos:
-            pin_pwms[pin_no].duty_u16(duty_cycles[pin_no][tick%len(duty_cycles[pin_no])])
+            pin_pwms[pin_no].duty_u16(
+                duty_cycles[pin_no][tick % len(duty_cycles[pin_no])]
+            )
         sleep(0.02)
         tick += 1
 

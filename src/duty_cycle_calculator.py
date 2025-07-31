@@ -1,22 +1,14 @@
-pin_pwms_used = []
-pins = dict()
-
 def duty_cycle_calculator(pin_config):
     print('Starting duty cycle calculation for pin {}'.format(pin_config['pinNo']))
     pin_duty_cycles = []
     action_count = 0
     for led_action in pin_config['ledActions']:
         print('Pin {} Action {}: {}'.format(pin_config['pinNo'], action_count, led_action['mode']))
-
-        if led_action['mode'] == 'breathe':
-            pin_duty_cycles.extend(led_breathe(led_action))
-        elif led_action['mode'] == 'blink':
-            pin_duty_cycles.extend(led_blink(led_action))
-        elif led_action['mode'] == 'static':
-            pin_duty_cycles.extend(led_static(led_action))
-
+        pin_duty_cycles.extend(led_actions[led_action['mode']](led_action))
         action_count += 1
+
     return pin_duty_cycles
+
 
 def led_breathe(led_action):
     step_duty_cycles = []
@@ -34,6 +26,7 @@ def led_breathe(led_action):
     step_duty_cycles.append(0)
 
     return step_duty_cycles
+
 
 def led_blink(led_action):
     step_duty_cycles = []
@@ -54,6 +47,7 @@ def led_blink(led_action):
 
     return step_duty_cycles
 
+
 def led_static(led_action):
     step_duty_cycles = []
 
@@ -65,12 +59,23 @@ def led_static(led_action):
 
     return step_duty_cycles
 
+
 def led_fade(led_action):
     step_duty_cycles = []
     ## TODO implement
     return step_duty_cycles
 
+
 def led_fluorescent(led_action):
     step_duty_cycles = []
     ## TODO implement
     return step_duty_cycles
+
+
+led_actions = {
+    'breathe': led_breathe,
+    'blink': led_blink,
+    'static': led_static,
+    'fade': led_fade,
+    'fluorescent': led_fluorescent
+}
