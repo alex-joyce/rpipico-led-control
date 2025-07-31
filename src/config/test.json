@@ -1,0 +1,23 @@
+[
+  {
+    "duration": 5,
+    "ledActions": [
+      {
+        "pin": 13,
+        "mode": "breathe",
+        "minBrightness": 0,
+        "maxBrightness": 1,
+        "upSpeed": 1000,
+        "downSpeed": 1000
+      },
+      {
+        "pin": 9,
+        "mode": "breathe",
+        "minBrightness": 0,
+        "maxBrightness": 1,
+        "upSpeed": 1000,
+        "downSpeed": 1000
+      }
+    ]
+  }
+]
