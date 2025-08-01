@@ -73,7 +73,8 @@ def led_flicker(led_action):
     step_duty_cycles = []
     ticks_used = 0
 
-    brightness = int(led_action['options']['brightness'] * 65536.)
+    brightness_high = int(led_action['options']['brightnessHigh'] * 65536.)
+    brightness_low = int(led_action['options']['brightnessLow'] * 65536.)
     low_interval = int(led_action['options']['lowInterval'])
     high_interval = int(led_action['options']['highInterval'])
     ticks = int(led_action['options']['ticks'])
@@ -81,15 +82,15 @@ def led_flicker(led_action):
     while ticks_used < ticks:
         if ticks - ticks_used in range (1,low_interval+high_interval):
             flicker_ticks = ticks - ticks_used
-            step_duty_cycles.extend([brightness] * (ticks - ticks_used))
+            step_duty_cycles.extend([brightness_high] * (ticks - ticks_used))
 
             ticks_used += flicker_ticks
         else:
             flicker_ticks = random.randint(low_interval, high_interval)
             ticks_used += 2*flicker_ticks
 
-            step_duty_cycles.extend([brightness] * flicker_ticks)
-            step_duty_cycles.extend([0] * flicker_ticks)
+            step_duty_cycles.extend([brightness_high] * flicker_ticks)
+            step_duty_cycles.extend([brightness_low] * flicker_ticks)
 
     return step_duty_cycles
 

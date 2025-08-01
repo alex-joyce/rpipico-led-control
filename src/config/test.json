@@ -5,7 +5,8 @@
       {
         "mode": "flicker",
         "options": {
-          "brightness": 1,
+          "brightnessHigh": 1,
+          "brightnessLow": 0.1,
           "lowInterval": 3,
           "highInterval": 5,
           "ticks": 150
@@ -27,13 +28,14 @@
         "mode": "static",
         "options": {
           "brightness": 0,
-          "ticks": 75
+          "ticks": 100
         }
       },
       {
         "mode": "flicker",
         "options": {
-          "brightness": 1,
+          "brightnessHigh": 1,
+          "brightnessLow": 0.1,
           "lowInterval": 3,
           "highInterval": 5,
           "ticks": 100
@@ -43,7 +45,7 @@
         "mode": "static",
         "options": {
           "brightness": 1,
-          "ticks": 275
+          "ticks": 250
         }
       }
     ]
