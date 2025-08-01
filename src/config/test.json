@@ -6,9 +6,9 @@
         "mode": "flicker",
         "options": {
           "brightness": 1,
-          "lowInterval": 1,
-          "highInterval": 7,
-          "ticks": 250
+          "lowInterval": 3,
+          "highInterval": 5,
+          "ticks": 150
         }
       },
       {
@@ -16,16 +16,6 @@
         "options": {
           "brightness": 1,
           "ticks": 300
-        }
-      },
-      {
-        "mode": "breathe",
-        "options": {
-          "cycles": 5,
-          "startBrightness": 1,
-          "endBrightness": 0,
-          "upTicks": 100,
-          "downTicks": 100
         }
       }
     ]
@@ -36,18 +26,24 @@
       {
         "mode": "static",
         "options": {
-          "brightness": 0.5,
-          "ticks": 150
+          "brightness": 0,
+          "ticks": 75
         }
       },
       {
-        "mode": "blink",
+        "mode": "flicker",
         "options": {
-          "cycles": 10,
-          "brightnessHigh": 1,
-          "brightnessLow": 0.5,
-          "ticksHigh": 20,
-          "ticksLow": 40
+          "brightness": 1,
+          "lowInterval": 3,
+          "highInterval": 5,
+          "ticks": 100
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 1,
+          "ticks": 275
         }
       }
     ]
