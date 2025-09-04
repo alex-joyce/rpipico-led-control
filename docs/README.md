@@ -16,5 +16,6 @@ This project provides a tick-based MicroPython implementation for simultaneously
 Below is an example of how to wire a single LED to GPIO0.
 
 * R1 resistance is determined by the power requirements of your LED, 220 ohms is usually good for most single LEDs or LED filaments, but smaller or larger resistors can be used as required for particularly small or large LEDs, or LED groups.
+* GPIO pins should not be used to power LEDs due to the current limitations of these pins. Attempting to use a GPIO pin to power your LEDs may damage your microcontroller. This circuit diagram uses VBUS (5V power from USB) to power all LEDs, with the GPIO pin connected to a transistor which allows for control of the LED.
 
-![](circuit_diagram.png)
+![Example of GPIO0 controlling a single LED](circuit_diagram.png)
