@@ -1,51 +1,312 @@
 [
   {
-    "pinNo": 1,
+    "pinNo": 0,
+    "location:": "left shoulder",
     "ledActions": [
       {
-        "mode": "flicker",
+        "mode": "static",
         "options": {
-          "brightnessHigh": 1,
-          "brightnessLow": 0.1,
-          "lowInterval": 3,
-          "highInterval": 5,
-          "ticks": 150
+          "brightness": 0.2,
+          "ticks": 50
         }
       },
       {
         "mode": "static",
         "options": {
-          "brightness": 1,
-          "ticks": 300
+          "brightness": 0.02,
+          "ticks": 50
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.2,
+          "ticks": 50
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.02,
+          "ticks": 50
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.2,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 1,
+    "location:": "right shoulder",
+    "ledActions": [
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.02,
+          "ticks": 50
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.2,
+          "ticks": 50
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.02,
+          "ticks": 50
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.2,
+          "ticks": 50
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.2,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 2,
+    "location": "right knee",
+    "ledActions": [
+      {
+        "mode": "breathe",
+        "options": {
+          "startBrightness": 0.01,
+          "endBrightness": 0.15,
+          "upTicks": 50,
+          "downTicks": 50,
+          "cycles": 1
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.15,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 3,
+    "location": "upper right thruster",
+    "ledActions": [
+      {
+        "mode": "flicker",
+        "options": {
+          "brightnessHigh": 0.1,
+          "brightnessLow": 0.03,
+          "lowInterval": 2,
+          "highInterval": 10,
+          "ticks": 200
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.1,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 4,
+    "location": "lower right thruster",
+    "ledActions": [
+      {
+        "mode": "flicker",
+        "options": {
+          "brightnessHigh": 0.1,
+          "brightnessLow": 0.03,
+          "lowInterval": 2,
+          "highInterval": 10,
+          "ticks": 200
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.1,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 6,
+    "location": "eye",
+    "ledActions": [
+      {
+        "mode": "breathe",
+        "options": {
+          "startBrightness": 0.05,
+          "endBrightness": 0.01,
+          "upTicks": 80,
+          "downTicks": 20,
+          "cycles": 2
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.05,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 7,
+    "location": "front thruster",
+    "ledActions": [
+      {
+        "mode": "flicker",
+        "options": {
+          "brightnessHigh": 0.05,
+          "brightnessLow": 0.01,
+          "lowInterval": 2,
+          "highInterval": 10,
+          "ticks": 200
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.05,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 8,
+    "location": "rear thruster",
+    "ledActions": [
+      {
+        "mode": "flicker",
+        "options": {
+          "brightnessHigh": 0.05,
+          "brightnessLow": 0.01,
+          "lowInterval": 2,
+          "highInterval": 10,
+          "ticks": 200
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.05,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 12,
+    "location": "left knee",
+    "ledActions": [
+      {
+        "mode": "breathe",
+        "options": {
+          "startBrightness": 0.01,
+          "endBrightness": 0.15,
+          "upTicks": 50,
+          "downTicks": 50,
+          "cycles": 1
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.15,
+          "ticks": 200
         }
       }
     ]
   },
   {
     "pinNo": 13,
+    "location": "upper left thruster",
     "ledActions": [
-      {
-        "mode": "static",
-        "options": {
-          "brightness": 0,
-          "ticks": 100
-        }
-      },
       {
         "mode": "flicker",
         "options": {
-          "brightnessHigh": 1,
-          "brightnessLow": 0.1,
-          "lowInterval": 3,
-          "highInterval": 5,
-          "ticks": 100
+          "brightnessHigh": 0.1,
+          "brightnessLow": 0.03,
+          "lowInterval": 2,
+          "highInterval": 10,
+          "ticks": 200
         }
       },
       {
         "mode": "static",
         "options": {
-          "brightness": 1,
-          "ticks": 250
+          "brightness": 0.1,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 14,
+    "location": "shield",
+    "ledActions": [
+      {
+        "mode": "breathe",
+        "options": {
+          "startBrightness": 0.01,
+          "endBrightness": 0.3,
+          "upTicks": 50,
+          "downTicks": 50,
+          "cycles": 1
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.3,
+          "ticks": 200
+        }
+      }
+    ]
+  },
+  {
+    "pinNo": 15,
+    "location": "lower left thruster",
+    "ledActions": [
+      {
+        "mode": "flicker",
+        "options": {
+          "brightnessHigh": 0.1,
+          "brightnessLow": 0.03,
+          "lowInterval": 2,
+          "highInterval": 10,
+          "ticks": 200
+        }
+      },
+      {
+        "mode": "static",
+        "options": {
+          "brightness": 0.1,
+          "ticks": 200
         }
       }
     ]
