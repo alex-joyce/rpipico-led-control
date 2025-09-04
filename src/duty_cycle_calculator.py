@@ -42,7 +42,7 @@ def led_blink(led_action):
 
     for cycle in range(0,cycles):
         step_duty_cycles.extend([brightness_high] * ticks_high)
-        step_duty_cycles.extend([brightness_low * ticks_low])
+        step_duty_cycles.extend([brightness_low] * ticks_low)
 
     return step_duty_cycles
 
