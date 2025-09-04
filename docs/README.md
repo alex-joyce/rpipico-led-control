@@ -2,6 +2,12 @@
 
 This project provides a tick-based MicroPython implementation for simultaneously and independently controlling and powering up to 23 groups of LEDs with a single Raspberry Pi Pico microcontroller.
 
+
+
+https://github.com/user-attachments/assets/b7b84395-8131-4b83-88ce-7120c60bb2e8
+
+
+
 ## How to Use
 
 * Install MicroPython on your device, non Raspberry Pi Pico boards may require amending code to work with their GPIO.
